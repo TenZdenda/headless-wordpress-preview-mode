@@ -38,7 +38,7 @@ class ZdenekHeadlessWp
 
                 $token = self::getToken();
                 
-                wp_redirect( self::$frontDomain . "/" . $parsed_url . '?preview_token=' . $token);
+                wp_redirect( self::$frontDomain . "/api/preview?secret=" . getenv('GRAPHQL_JWT_AUTH_SECRET_KEY') . "&slug=" . $parsed_url);
             }
         });
     }
