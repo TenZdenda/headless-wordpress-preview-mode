@@ -4,7 +4,7 @@
 Plugin Name: Headless Wordpress
 Description: Modifies Wordpress to better suit headless use cases.
 Author: Zdeněk Pašek
-Version: 1.0
+Version: 2.0
 */
 
 use Firebase\JWT\JWT;
